@@ -4,9 +4,7 @@ class MyRobot(wpilib.TimedRobot):
   def robotInit(self):
     self.left_drive_motors = wpilib.VictorSP(0)
     self.right_drive_motors = wpilib.VictorSP(1)
-
-    self.left_drive_motors.setInverted(True)
-
+  
     self.left_joystick = wpilib.Joystick(0)
     self.right_joystick = wpilib.Joystick(1)
 
